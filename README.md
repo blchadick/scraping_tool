@@ -16,3 +16,7 @@ The following methods are implemented in the latest iteration of the script.
 **action_element_click:**	    Clicks on a specified element
 
 **action_element_sendkeys:**	  Enters text into a specified element
+
+**send_keys_submit:**	        Enters text into a specified element and presses the return key
+
+**get_table_rows:**	        Returns rows in a table

@@ -122,6 +122,16 @@ def action_element_sendkeys(driver,selenium_element,method_args):
     response['timestamp']       = str(datetime.datetime.now())
     return response
 
+# Returns the text value of the specified element attribute
+def get_table_rows(driver,selenium_element,method_args):
+    time.sleep(float(method_args['wait']))
+    rows =""
+    for tr in selenium_element.find_elements_by_tag_name('tr'): ### All rows in the
+        rows = rows + '\n' + tr.text
+    response={'return_value':'"'+rows+'"', 'js_log': driver.get_log('browser'),'timestamp':str(datetime.datetime.now())}
+    response['action_id'] = method_args['action_id']
+    return response
+
 # Enters text into the specified element and presses the "ENTER" key
 
 def send_keys_submit(driver,selenium_element,method_args):
@@ -159,7 +169,8 @@ methods = {
             'get_url':                  get_url,
             'send_keys_submit':         send_keys_submit,
             'custom_action1':           custom_action1,
-            'get_element_html':         get_element_html
+            'get_element_html':         get_element_html,
+            'get_table_rows':           get_table_rows
             }
 
 def exec_method(driver,method_name,selenium_element,method_args):

@@ -1,0 +1,6 @@
+{"start_url":"https://www.google.com",
+"chrome_binary":"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+"chrome_driver_binary": "C:/configurations/chromedriver.exe",
+"test_script_file": "test_script_template.csv",
+"login_username":"",
+"login_pw":""}

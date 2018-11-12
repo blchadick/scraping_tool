@@ -5,25 +5,11 @@
 This script utilizes the Selenium Python library and Webdriver to automate crawling of websites, including responsive web applications. A sequence of actions is fed into the script as a CSV file. The script executes those actions, returning the results of their executions and a screenshot. Specific elements within a page can be targeted by either specifying xPath or CSS selectors.
 The following methods are implemented in the latest iteration of the script.
 
+The script is primarily meant for testing workflows within web-based applications, though it could be modified for general web scraping. 
+
 ## Setup:
 
 In the config.json file, enter the location of your Selenium webdriver binary and chrome binary. Enter the location of your test script template -- this file provides crawling instructions to the script.
-
-action_id
-method_name
-element_selector
-selector_type
-attrib
-wait
-retry_count
-sendkeys_text
-open_url
-action_description
-
-
-
-
-
 
 ## Methods
 

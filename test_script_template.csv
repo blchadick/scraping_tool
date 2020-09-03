@@ -1,6 +1,6 @@
 action_id,method_name,element_selector,selector_type,attrib,wait,retry_count,sendkeys_text,open_url,action_description
 1,get_url,,,,5,5,,https://github.com/blchadick,Open web scraper test page
-2,action_element_click,"//a[contains(@href,""repositories"")]",xpath,,5,5,,,click on the "repositiories" link
-2,action_element_sendkeys,//*[@id='header']/div[2]/div[2]/form/input[1],xpath,,3,3,scraping-tool,,type "scraping-tool" into the search bar
-3,action_element_click,"//a[contains(@href,""scraping-tool"")]",xpath,,3,3,,,click on the link named "scraping-tool"
+2,action_element_click,"//a[contains(@href,""repositories"")]",xpath,,5,5,,,click on the 'repositiories' link
+2,action_element_sendkeys,//*[@id='header']/div[2]/div[2]/form/input[1],xpath,,3,3,scraping-tool,,type 'scraping-tool' into the search bar
+3,action_element_click,"//a[contains(@href,""scraping-tool"")]",xpath,,3,3,,,click on the link named 'scraping-tool'
 4,get_element_text,//article,xpath,,3,3,,,scrape the readme text
